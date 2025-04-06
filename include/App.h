@@ -99,7 +99,7 @@ inline void App::write_result_to_file(const std::string &output_file_path, const
     file << "\t - steps: " << binary_search_result.get_steps() << std::endl;
     file << "\t - time: " << binary_search_result.get_time() << std::endl;
 
-    std::cout << std::endl;
+    file << std::endl;
 
     file << "Linear search:" << std::endl;
     file << "\t - index: " << linear_search_result.get_index() << std::endl;
