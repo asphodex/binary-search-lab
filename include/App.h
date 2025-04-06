@@ -196,5 +196,8 @@ void App::run(const std::string &input_file, const std::string &output_file_path
     write_result_to_file(output_file_path, output_file_prefix, binary_search_result, linear_search_result);
 
     Slog::info("wrote result", Slog::opt("path", output_file_path));
+
+    delete []ctypes;
+    delete []arr;
 }
 #endif //APP_H
